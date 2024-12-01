@@ -1,0 +1,26 @@
+{
+    "name": "hotelmah/modelixe",
+    "type": "library",
+    "description": "ModeliXe v2 is a light-weight PHP templating library that was originally used in 2001 for a guestbook and originated in France. This new version 2 works and can be used for experimenting, personal small projects, or upgrading.",
+    "keywords": ["Templating","LightWeight", "ModeliXe", "France", "PHP"],
+    "homepage": "https://github.com/hotelmah/modelixe",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Kevin Pereira",
+            "email": "kevin@kevinp.net",
+            "homepage": "https://github.com/hotelmah",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hotelmah\\modelixe\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -10,41 +10,30 @@ html * {
 /* ===================================================================================================================== */
 
 body {
-    /* background-color: rgba(128, 255, 0, 0.433); */
     overflow: hidden;
-}
 
-main {
     background-color: #58CFFB;
 }
 
 /* ===================================================================================================================== */
 
-.SectionTable {
+.SectionQuad {
     width: 100vw;
     height: 100vh;
 
-    /* position: absolute; */
-    /* top: 0; */
     opacity: 0.7;
-    /* z-index: 101; */
 
-    /* display: grid;
+    display: grid;
     grid-template-columns: 40vw 40vw;
     grid-template-rows: 45vh 45vh;
     grid-auto-flow: row;
     column-gap: 4vw;
     row-gap: 4vh;
-    grid-auto-columns: 10vw; */
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    grid-auto-columns: 10vw;
     justify-content: center;
     align-content: center;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: cadetblue;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
 
     animation-duration: 100s;
     animation-name: chgBackgroundImage;
@@ -89,47 +78,23 @@ main {
 
 /* ===================================================================================================================== */
 
-.DivTable {
-    width: 70%;
-    height: 65%;
-    margin: 0 auto;
-
+.TopLeft {
     z-index: 100;
     overflow: auto;
     padding: 1em;
 
-    /* grid-column-start: 1;
+    grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 
-    background-color: rgba(230, 250, 47, 0.807);
-    border-radius: 15px;
+    background-color: rgba(117, 117, 117, 0.74);
+    border-radius: 10px;
 }
 
-table {
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
-}
-
-table th {
-    padding: 6px
-    ;
-    color: rgb(6, 6, 77);
-    background-color: #a315d3;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    font-weight: 500;
-    font-style: oblique;
-}
-
-/* ===================================================================================================================== */
-
-/* .TopRight {
+.TopRight {
     z-index: 100;
     overflow: auto;
     padding: 1em;
@@ -175,6 +140,6 @@ table th {
 
     background-color: rgba(9, 182, 79, 0.74);
     border-radius: 10px;
-} */
+}
 
 /* ===================================================================================================================== */

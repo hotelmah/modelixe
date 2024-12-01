@@ -10,36 +10,33 @@ html * {
 /* ===================================================================================================================== */
 
 body {
-    /* background-color: rgba(128, 255, 0, 0.433); */
     overflow: hidden;
-}
-
-main {
     background-color: #58CFFB;
 }
 
 /* ===================================================================================================================== */
 
-.SectionQuad {
+.SectionTable {
     width: 100vw;
     height: 100vh;
-    /* position: absolute; */
-    top: 0;
-    opacity: 0.7;
-    /* z-index: 101; */
 
-    display: grid;
+    opacity: 0.7;
+
+    /* display: grid;
     grid-template-columns: 40vw 40vw;
     grid-template-rows: 45vh 45vh;
     grid-auto-flow: row;
     column-gap: 4vw;
     row-gap: 4vh;
-    grid-auto-columns: 10vw;
+    grid-auto-columns: 10vw; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: cadetblue;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
 
     animation-duration: 100s;
     animation-name: chgBackgroundImage;
@@ -84,68 +81,77 @@ main {
 
 /* ===================================================================================================================== */
 
-.TopLeft {
-    z-index: 100;
-    overflow: auto;
+.DivTable {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
     padding: 1em;
 
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    justify-content: center;
-    align-items: center;
+    z-index: 100;
+    overflow: auto;
 
-    background-color: rgba(117, 117, 117, 0.74);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+
+    background-color: rgba(164, 40, 133, 0.807);
+    border-radius: 15px;
 }
 
-.TopRight {
-    z-index: 100;
-    overflow: auto;
-    padding: 1em;
+table {
+    width: 100%;
 
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    justify-content: center;
-    align-items: center;
+    color: black;
 
-    background-color: rgba(115, 21, 21, 0.74);
-    border-radius: 10px;
+    border-spacing: 1px;
+    border-collapse: separate;
+
+    border: 2px solid black;
 }
 
-.BottomLeft {
-    z-index: 100;
-    overflow: auto;
-    padding: 1em;
-
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(195, 19, 195, 0.74);
-    border-radius: 10px;
+table tr:nth-child(even) {
+    background-color: lightpink;
 }
 
-.BottomRight {
-    z-index: 100;
-    overflow: auto;
-    padding: 1em;
+table tr:nth-child(odd) {
+    background-color: rosybrown;
+}
 
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    justify-content: center;
-    align-items: center;
+table tr:hover {
+    background-color: coral;
+}
 
-    background-color: rgba(9, 182, 79, 0.74);
-    border-radius: 10px;
+table th {
+    padding: 6px;
+
+    color: rgb(188, 188, 244);
+    background-color: darkblue;
+
+    font-size: medium;
+    font-style: oblique;
+    font-weight: 700;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+}
+
+table td {
+    padding: 6px;
+
+    vertical-align: top;
+    font-size: 12px;
+
+    border-top: 1px solid darkred;
+    border-bottom: 1px solid darkred;
+}
+
+/* ===================================================================================================================== */
+
+.BelowTable {
+    width: 95%;
+    margin: 20px;
+
+    text-align: center;
 }
 
 /* ===================================================================================================================== */
