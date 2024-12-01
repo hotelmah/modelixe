@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================================================================================================================== */
+
+body {
+    /* background-color: rgba(128, 255, 0, 0.433); */
+    overflow: hidden;
+}
+
+main {
+    background-color: #58CFFB;
+}
+
+/* ===================================================================================================================== */
+
+.SectionQuad {
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    top: 0;
+    opacity: 0.7;
+    /* z-index: 101; */
+
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 45vh 45vh;
+    grid-auto-flow: row;
+    column-gap: 4vw;
+    row-gap: 4vh;
+    grid-auto-columns: 10vw;
+    justify-content: center;
+    align-content: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: cadetblue;
+
+    animation-duration: 100s;
+    animation-name: chgBackgroundImage;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+@keyframes chgBackgroundImage {
+    10% {
+        background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    }
+    20% {
+        background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    }
+    30% {
+        background-image: linear-gradient( 135deg, #F6CEEC 10%, #D939CD 100%);
+    }
+    40% {
+        background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+    }
+    50% {
+        background-image: linear-gradient( 135deg, #EECE13 10%, #B210FF 100%);
+    }
+    60% {
+        background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
+    }
+    70% {
+        background-image: linear-gradient( 135deg, #FFF886 10%, #F072B6 100%);
+    }
+    80% {
+        background-image: linear-gradient( 135deg, #F5CBFF 10%, #C346C2 100%);
+    }
+    90% {
+        background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
+    }
+    100% {
+        background-image: linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%);
+    }
+}
+
+/* ===================================================================================================================== */
+
+.TopLeft {
+    z-index: 100;
+    overflow: auto;
+    padding: 1em;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(117, 117, 117, 0.74);
+    border-radius: 10px;
+}
+
+.TopRight {
+    z-index: 100;
+    overflow: auto;
+    padding: 1em;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(115, 21, 21, 0.74);
+    border-radius: 10px;
+}
+
+.BottomLeft {
+    z-index: 100;
+    overflow: auto;
+    padding: 1em;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(195, 19, 195, 0.74);
+    border-radius: 10px;
+}
+
+.BottomRight {
+    z-index: 100;
+    overflow: auto;
+    padding: 1em;
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(9, 182, 79, 0.74);
+    border-radius: 10px;
+}
+
+/* ===================================================================================================================== */
