@@ -1,6 +1,6 @@
 <?php
 
-namespace MODELIXE;
+namespace ModeliXe;
 
 // General configuration of ModeliXe
 

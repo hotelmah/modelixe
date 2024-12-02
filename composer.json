@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "hotelmah\\modelixe\\": "src/"
+            "ModeliXe\\": "src/"
         }
     },
     "minimum-stability": "dev",

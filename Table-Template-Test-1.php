@@ -2,10 +2,10 @@
 
 namespace TEST;
 
-// require_once('vendor/autoload.php');
-require_once('src/ModeliXe.php');
+require_once('vendor/autoload.php');
+// require_once('src/ModeliXe.php');
 
-use MODELIXE\ModeliXe;
+use ModeliXe\ModeliXe;
 
 /* ===================================================================================================================== */
 

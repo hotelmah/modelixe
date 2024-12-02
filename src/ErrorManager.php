@@ -49,7 +49,7 @@ MA 02111-1307, Etats-Unis.
 Pour tout renseignements mailez � modelixe@free.fr ou thierry.andre@freesbee.fr
 -------------------------------------------------------------------------------------------------------------------- */
 
-namespace MODELIXE;
+namespace ModeliXe;
 
 $incErrorManager = true;
 
